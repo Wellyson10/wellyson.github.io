@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background-image:url(imagens/wallpaperfundo.jpg);
+}
+
+#container{
+  width: 1280px;
+  height: 720px;
+  padding-left: 50px;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+#header{
+  width: 300px;
+  height: 420px;
+  padding-top: 20px;
+  background-color: rgb(12, 11, 11);
+
+}
+
+.maineu{
+  
+  width: 924px;
+  margin-left: 5px;
+  margin-top: 20px;
+  color: white;
+}
+
+
+header h1{
+  padding-bottom: 30px;
+  color: white;
+  margin-left: 20px;
+}
+
+header p{
+  font-size: 15px;
+  color: rgb(160, 160, 160);
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+li{
+  margin-top: 10px;
+}
+
+ul li a{
+  color: rgb(160, 160, 160);;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  text-align: center;
+  font-size: 15px;
+  transition: .3s;
+}
+
+ul li a:hover {
+  background-color: rgb(89, 89, 204);
+  color: white;
+  width: 300px;
+  border: black;
+  border-radius: 5px;
+}
+
+ul {
+  list-style: none;
+}
+
+.imagemeu{
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+#menu{
+  width: 300px;
+  height: 280px;
+  background-color: rgb(12, 11, 11);
+}
+
+.pag2{
+  color: white;
+  list-style: none;
+  width: 924px;
+  margin-left: 5px;
+  margin-top: 20px;
+}
+
+.pag2 a{
+  color: white;
+}
+
+
+
