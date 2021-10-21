@@ -1,210 +1,646 @@
 * {
-    margin:0;
-    padding: 0;
-    list-style: none;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  #container{
-    width: 1200px;
-    height: auto;
-    display: flex;
-    flex-flow: column wrap;
-    background-color: rgb(182, 178, 178);
-  }
-  
-  #header{
-    width: 1180px;
-    height: 100px;
-    background-color: rgb(12, 11, 11);
-    display: flex;
-    margin-left: 10px;
-  }
-  header h1{ 
-    color: black;
-    background-color: rgb(157, 152, 152);
-    width: 300px;
-    height: 100px;
-    text-align: center; 
-    padding: 5px;
-    font-size: 70px;
-  }
-  
-  header p{
-    font-size: 15px;
-    color: black;
-    margin-left: 20px;
-    margin-top: 10px;
-  }
-  header a{
-    text-decoration: none;
-  }
-  
-  li{
-    margin-top: 20px;
-    margin-left: 50px;
-  }
-  
-  ul li a{
-    color: black;
-    text-decoration: none;
-    padding: 10px;
-    display: flex;
-    text-align: center;
-    font-size: 35px;
-    transition: .3s;  
-  }
-  
-  ul li a:hover {
-    background-color: rgb(89, 89, 204);
-    color: white;
-    border-radius: 5px;
-  }
-  
-  ul {
-    list-style: none;
-  }
-  
-  #menu{
-    width: 880px;
-    height: 100px;
-    background-color: rgb(157, 152, 152);
-    display: flex;
-  }
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-.destaques{
-  width: 1180px;
-  height: 300px;
+body {
+  background-image: url('https://image.freepik.com/fotos-gratis/texturas-de-madeira-velha_74190-5512.jpg');
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+a:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.aMod:hover {
+  background-color: rgb(226, 10, 124);
+}
+
+.logo {
+  margin-left: 68px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#header {
+  box-sizing: border-box;
+  height: 100px;
+  padding: 1rem;
   display: flex;
-  margin-left: 10px;
-  margin-top: 10px;
-  background-color: rgb(191, 188, 188);
+  align-items: center;
+  justify-content: space-between;
 }
 
-.destaques h1{
-  margin-left: 500px;
-  margin-top: 100px;
-}
-
-.conteudos{
-  background-color: rgb(182,177,177);
-  width: 1180px;
-  height: 750px;
+#menu {
   display: flex;
-  flex-flow: column wrap;
-  margin-left: 10px;
+  list-style: none;
+  gap: 0.5rem;
 }
 
-.conteudos p{
-  text-align: center;
-  margin-top: 150px;
+#menu a {
+  display: block;
+  padding: 0.5rem;
+  border-radius: 5px;
 }
 
-.conteudosindex{
-  background-color: rgb(182,177,177);
+#btn-mobile {
+  display: none;
+}
+
+.destaques {
   width: 1180px;
+  height: 310px;
+  display: flex;
+  margin: auto;
+  margin-top: 15px;
+  border: 5px solid #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.conteudosindex {
+  width: 1180px;
+  height: auto;
   display: flex;
   margin-left: 10px;
   padding-bottom: 10px;
+  margin: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.conteudosindex p{
+.box1index {
+  width: 380px;
+  height: auto;
+  margin-top: 15px;
+  border-color: white;
+  border: 5px solid #fff;
+}
+
+.box2index {
+  width: 380px;
+  height: auto;
+  margin-top: 15px;
+  border-color: white;
+  border: 5px solid #fff;
+}
+
+.box3index {
+  width: 380px;
+  height: auto;
+  margin-top: 15px;
+  border-color: white;
+  border: 5px solid #fff;
+}
+
+.box1index p {
+  color: black;
+  padding-left: 5px;
+}
+
+.box2index p {
+  color: black;
+  padding-left: 5px;
+}
+
+.box3index p {
+  color: black;
+  padding-left: 5px;
+}
+
+.informacoes {
+  float: left;
+}
+
+.buttonbox1 {
+  float: right;
+  border-radius: 5px;
+  background-color: rgb(226, 10, 124);
+  margin-right: 5px;
   text-align: center;
-  margin-top: 150px;
+  padding: 4px;
+  margin-top: 25px;
 }
 
-.box1index{
-  background-color: rgb(148,147,147);
+.box2index {
   width: 380px;
-  height: 350px;
-  margin-top: 15px;
-}
-
-.box2index{
-  background-color: rgb(148,147,147);
-  width: 380px;
-  height: 350px;
+  height: auto;
   margin-top: 15px;
   margin-left: 20px;
 }
 
-.box3index{
-  background-color: rgb(148,147,147);
+.box3index {
   width: 380px;
-  height: 350px;
+  height: auto;
   margin-left: 20px;
   margin-top: 15px;
 }
 
-.box1{
-  background-color: rgb(148,147,147);
-  width: 380px;
-  height: 350px;
-  margin-top: 15px;
-}
-
-.box2{
-  background-color: rgb(148,147,147);
-  width: 380px;
-  height: 350px;
-  margin-top: 20px;
-}
-
-.box3{
-  background-color: rgb(148,147,147);
-  width: 380px;
-  height: 350px;
-  margin-left: 20px;
-  margin-top: 15px;
-}
-
-.box4{
-  background-color: rgb(148,147,147);
-  width: 380px;
-  height: 350px;
-  margin-left: 20px;
-  margin-top: 20px;
-}
-
-.box5{
-  background-color: rgb(148,147,147);
-  width: 380px;
-  height: 350px;
-  margin-left: 20px;
-  margin-top: 15px;
-}
-
-.box6{
-  background-color: rgb(148,147,147);
-  width: 380px;
-  height: 350px;
-  margin-left: 20px;
-  margin-top: 20px;
-}
-
-.rodape{
-  background-color: rgb(167,167,167);
+.conteudos {
   width: 1180px;
-  height: 100px;
+  height: auto;
   display: flex;
+  flex-flow: wrap;
   margin-left: 10px;
+  margin: auto;
 }
 
-.rodape h1{
+.box1 {
+  width: 380px;
+  height: auto;
+  margin-top: 15px;
+  border-color: white;
+  border: 5px solid #fff;
+}
+
+.box2 {
+  width: 380px;
+  height: auto;
+  margin-top: 15px;
+  border-color: white;
+  border: 5px solid #fff;
+}
+
+.box3 {
+  width: 380px;
+  height: auto;
+  margin-top: 15px;
+  border-color: white;
+  border: 5px solid #fff;
+}
+
+.box4 {
+  width: 380px;
+  height: auto;
+  margin-top: 15px;
+  border-color: white;
+  border: 5px solid #fff;
+}
+
+.box5 {
+  width: 380px;
+  height: auto;
+  margin-top: 15px;
+  border-color: white;
+  border: 5px solid #fff;
+}
+
+.box6 {
+  width: 380px;
+  height: auto;
+  margin-top: 15px;
+  border-color: white;
+  border: 5px solid #fff;
+}
+.box1 {
+  width: 380px;
+  height: auto;
+  margin-top: 15px;
+}
+
+.box2 {
+  width: 380px;
+  height: auto;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+.box3 {
+  width: 380px;
+  height: auto;
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+.box4 {
+  width: 380px;
+  height: auto;
+  margin-top: 15px;
+}
+
+.box5 {
+  width: 380px;
+  height: auto;
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+.box6 {
+  width: 380px;
+  height: auto;
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+.box1 p {
+  color: black;
+  padding-top: 2px;
+  padding-left: 5px;
+}
+
+.box2 p {
+  color: black;
+  padding-top: 2px;
+  padding-left: 5px;
+}
+
+.box3 p {
+  color: black;
+  padding-top: 2px;
+  padding-left: 5px;
+}
+
+.box4 p {
+  color: black;
+  padding-top: 2px;
+  padding-left: 5px;
+}
+
+.box5 p {
+  color: black;
+  padding-top: 2px;
+  padding-left: 5px;
+}
+
+.box6 p {
+  color: black;
+  padding-top: 2px;
+  padding-left: 5px;
+}
+.rodape {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  margin-top: 7px;
+}
+
+.rodape h1 {
   margin-left: 580px;
   margin-top: 40px;
 }
 
-
-
-@media (max-width:375px)  {
- 
+.map {
+  margin-top: 50px;
 }
 
-@media (min-width: 768px) {
-  
+.insta_mod {
+  color: rgb(220, 48, 86);
+  font-size: 50px;
+  margin-top: 40px;
+  padding-left: 575px;
 }
 
+.face_mod {
+  color: blue;
+  font-size: 50px;
+  margin-top: 40px;
+  padding-left: 575px;
+}
 
+.whatsapp_mod {
+  color: rgb(72, 200, 87);
+  font-size: 50px;
+  margin-top: 40px;
+  padding-left: 575px;
+}
 
+.slide {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+.slides {
+  width: 5120px;
+  display: flex;
+}
+
+.image img {
+  width: 100%;
+  height: 300px;
+}
+
+#atual {
+  transition: all 2s;
+}
+
+.btn {
+  position: absolute;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.4s;
+  font-size: 1.7em;
+  margin-top: -5px;
+}
+
+.btn:hover {
+  transform: scale(1.5);
+}
+
+#back {
+  top: 38%;
+}
+
+#next {
+  top: 38%;
+  right: 6%;
+}
+
+.balls {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: -45px;
+}
+
+.balls div {
+  transition: all 0.5s;
+  border: 3px solid #fff;
+  padding: 6px;
+  border-radius: 50%;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.balls div:hover {
+  background: #fff;
+}
+
+.imgAtual {
+  transition: all 0.5s;
+  background: #fff;
+}
+
+.redeSociais {
+  text-align: center;
+  margin-top: 55px;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 375px) {
+  .conteudosindex {
+    flex-direction: column;
+  }
+
+  .conteudos {
+    flex-direction: column;
+  }
+
+  .logo {
+    margin-left: -15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .box1index {
+    width: 375px;
+    height: auto;
+    margin-top: 15px;
+    border-color: white;
+    border: 5px solid #fff;
+  }
+
+  .box2index {
+    width: 375px;
+    height: auto;
+    margin-left: 0;
+    margin-top: 15px;
+    border-color: white;
+    border: 5px solid #fff;
+  }
+
+  .box3index {
+    width: 375px;
+    height: auto;
+    margin-left: 0;
+    margin-top: 15px;
+    border-color: white;
+    border: 5px solid #fff;
+  }
+
+  .box1 {
+    width: 375px;
+    height: auto;
+    margin-top: 15px;
+    border-color: white;
+    border: 5px solid #fff;
+  }
+
+  .box2 {
+    width: 375px;
+    height: auto;
+    border-color: white;
+    border: 5px solid #fff;
+    margin-left: 0;
+  }
+
+  .box3 {
+    width: 375px;
+    height: auto;
+    margin-left: 0;
+    border-color: white;
+    border: 5px solid #fff;
+  }
+
+  .box4 {
+    width: 375px;
+    height: auto;
+    margin-left: 0;
+    border-color: white;
+    border: 5px solid #fff;
+  }
+
+  .box5 {
+    width: 375px;
+    height: auto;
+    margin-left: 0;
+    border-color: white;
+    border: 5px solid #fff;
+  }
+
+  .box6 {
+    width: 375px;
+    height: auto;
+    margin-left: 0;
+    border-color: white;
+    border: 5px solid #fff;
+  }
+
+  .rodape {
+    height: auto;
+  }
+
+  .insta_mod {
+    color: rgb(220, 48, 86);
+    font-size: 50px;
+    margin-top: 40px;
+    padding-left: 55px;
+  }
+
+  .face_mod {
+    color: blue;
+    font-size: 50px;
+    margin-top: 40px;
+    padding-left: 55px;
+  }
+
+  .whatsapp_mod {
+    color: rgb(72, 200, 87);
+    font-size: 50px;
+    margin-top: 40px;
+    padding-left: 55px;
+  }
+
+  .redeSociais {
+    margin-left: -800px;
+    margin-top: -30px;
+  }
+
+  .map {
+    width: 375px;
+  }
+
+  #back {
+    top: 30%;
+  }
+
+  #next {
+    top: 30%;
+    right: 0%;
+  }
+
+  .balls {
+    margin-top: -45px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .conteudosindex {
+    flex-direction: column;
+  }
+
+  .conteudos {
+    flex-direction: column;
+  }
+
+  .logo {
+    margin-left: -15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .box1index {
+    width: 375px;
+    height: auto;
+    margin-top: 15px;
+    border-color: white;
+    border: 5px solid #fff;
+  }
+
+  .box2index {
+    width: 375px;
+    height: auto;
+    margin-left: 0;
+    margin-top: 15px;
+    border-color: white;
+    border: 5px solid #fff;
+  }
+
+  .box3index {
+    width: 375px;
+    height: auto;
+    margin-left: 0;
+    margin-top: 15px;
+    border-color: white;
+    border: 5px solid #fff;
+  }
+
+  .rodape {
+    height: auto;
+  }
+
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background: #e7e7e7;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  }
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+}
